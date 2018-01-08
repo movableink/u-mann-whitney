@@ -114,7 +114,7 @@ class UMannWhitney
     ds[:ranked] = ds[:data].ranked
     @n = ds.nrows
 
-    @r1 = ds.filter_rows { |r| r[:g] == 0}[:ranked].sum
+    @r1 = ds.filter_rows { |r| r[:g] == 0}[:ranked].sum || 0
     @r2 = ((ds.nrows * (ds.nrows + 1)).quo(2)) - r1
     @u1 = r1 - ((@n1 * (@n1 + 1)).quo(2))
     @u2 = r2 - ((@n2 * (@n2 + 1)).quo(2))
