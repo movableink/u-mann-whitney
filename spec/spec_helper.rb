@@ -1,6 +1,5 @@
 require "bundler/setup"
 require "u_mann_whitney"
-require "daru"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

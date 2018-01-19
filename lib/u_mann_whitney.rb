@@ -1,6 +1,6 @@
 require 'u_mann_whitney/version'
 require 'distribution'
-require 'daru'
+require 'u_mann_whitney/silent_daru'
 
 #
 # = U Mann-Whitney test
